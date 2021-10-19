@@ -35,14 +35,15 @@ module.exports = {
       before: info => `<div class="danger custom-block"><p class="custom-block-title">${info}</p>`,
       after: '</div>',
     }],
-    ['disqus-spa', { shortname: 'docscloudlinuxcom' }],
+//    ['disqus-spa', { shortname: 'docscloudlinuxcom' }],
     ['@vuepress/google-analytics',
       {
         'ga': 'UA-12711721-15'
       }
     ],
-    [ 'autometa', autoMetaOptions ],
-    [ 'separate-pages', { alwaysVisibleBlocks: ['#disqus_thread'] } ]
+    [ 'autometa', autoMetaOptions ]
+//	,
+//    [ 'separate-pages', { alwaysVisibleBlocks: ['#disqus_thread'] } ]
   ],
   configureWebpack: {
     resolve: {
@@ -74,13 +75,13 @@ module.exports = {
     "/": {
       lang: "en-US", // this will be set as the lang attribute on <html>
       title: "Documentation",
-      description: "CloudLinux Documentation"
+      description: "CloudLinux OS Shared Documentation"
     },
-    "/ru/": {
-      lang: "ru",
-      title: "Документация",
-      description: "Документация CloudLinux"
-    }
+//    "/ru/": {
+//      lang: "ru",
+//      title: "Документация",
+//      description: "Документация CloudLinux"
+//    }
   },
   theme: "cloudlinux",
   markdown: {
@@ -120,7 +121,7 @@ module.exports = {
           {
             text: "How to",
             url:
-              "https://cloudlinux.zendesk.com/hc/sections/115001344329-How-do-I"
+              "https://cloudlinux.zendesk.com/hc/en-us/categories/360002375940"
           },
           {
             text: "Getting started",
@@ -128,9 +129,9 @@ module.exports = {
           },
           {
             text: "Contact support",
-            url: "https://hubs.ly/H0pk7990"
+            url: "https://cloudlinux.zendesk.com/hc/en-us/requests/new"
           },
-          { text: "Blog", url: "https://www.cloudlinux.com/blog" }
+          { text: "Blog", url: "https://blog.cloudlinux.com/" }
         ],
 
         // text for the language dropdown title
@@ -162,74 +163,65 @@ module.exports = {
             collapsable: false,
             children: [
               "/introduction/",
-              "/cloudlinux_installation/",
-              "/control_panel_integration/",
-              "/limits/",
-              "/command-line_tools/",
-              "/lve_manager/",
-              "/x-ray/",
-              "/cloudlinux_os_components/",
-              "/cloudlinux_os_kernel/",
-              "/for_cloudlinux_partners/",
-              "/deprecated/"
+              "/wpos-plugin/"
             ]
           }
         ]
       },
-      "/ru/": {
-        title: "Язык",
-        selectText: "Рус",
-        label: "Русский",
-        editLinkText: "Редактировать",
-        tryFree: "Попробовать бесплатно",
-        search: "Поиск",
-        serviceWorker: {
-          updatePopup: {
-            message: "Доступен новый контент",
-            buttonText: "Обновить"
-          }
-        },
-        algolia: {
-          apiKey: "3990019335416f9a96a6a47d07e25187",
-          indexName: "cloudlinuxos-ru",
-          appId: "0TCNL6CGX8"
-        },
-        stayInTouch: "Будем на связи",
-        bottomLinks: [
-            {
-                text: "Инструкции",
-                url: "https://cloudlinux.zendesk.com/hc/sections/115001344329-How-do-I"
-            },
-            {
-                text: "С чего начать",
-                url: "https://www.cloudlinux.com/getting-started-with-cloudlinux-os"
-            },
-            {
-                text: "Техподдержка",
-                url: "https://hubs.ly/H0pk7990"
-            },
-            { text: "Блог", url: "https://www.cloudlinux.com/blog" }
-        ],
-        sidebar: [
-          {
-            title: "Содержание",
-            collapsable: false,
-            children: [
-              "/ru/introduction/",
-              "/ru/cloudlinux_installation/",
-              "/ru/control_panel_integration/",
-              "/ru/limits/",
-              "/ru/command-line_tools/",
-              "/ru/lve_manager/",
-              "/ru/x-ray/",
-              "/ru/cloudlinux_os_components/",
-              "/ru/cloudlinux_os_kernel/",
-              "/ru/for_cloudlinux_partners/",
-              "/ru/deprecated/"
-            ]
-          }
-        ]
-      }
+//      "/ru/": {
+//        title: "Язык",
+//        selectText: "Рус",
+//        label: "Русский",
+//        editLinkText: "Редактировать",
+//        tryFree: "Попробовать бесплатно",
+//        search: "Поиск",
+//        serviceWorker: {
+//          updatePopup: {
+//            message: "Доступен новый контент",
+//            buttonText: "Обновить"
+//          }
+//        },
+//        algolia: {
+//          apiKey: "3990019335416f9a96a6a47d07e25187",
+//          indexName: "cloudlinuxos-ru",
+//          appId: "0TCNL6CGX8"
+//        },
+//        stayInTouch: "Будем на связи",
+//        bottomLinks: [
+//            {
+//                text: "Инструкции",
+//                url: "https://cloudlinux.zendesk.com/hc/sections/115001344329-How-do-I"
+//            },
+//            {
+//                text: "С чего начать",
+//                url: "https://www.cloudlinux.com/getting-started-with-cloudlinux-os"
+//            },
+//            {
+//                text: "Техподдержка",
+//                url: "https://hubs.ly/H0pk7990"
+//            },
+//            { text: "Блог", url: "https://www.cloudlinux.com/blog" }
+//        ],
+//        sidebar: [
+//          {
+//            title: "Содержание",
+//            collapsable: false,
+//            children: [
+//              "/ru/introduction/",
+              // "/ru/cloudlinux_installation/",
+              // "/ru/limits/",
+              // "/ru/lve_manager/",
+              // "/ru/cloudlinux-os-plus/",
+              // "/ru/cloudlinux_os_components/",
+              // "/ru/command-line_tools/",
+              // "/ru/control_panel_integration/",
+              // "/ru/cloudlinux_os_kernel/",
+//              "/ru/for_cloudlinux_partners/"
+              // "/ru/deprecated/"
+//            ]
+//          }
+//        ]
+//      }
     }
   }
 };
