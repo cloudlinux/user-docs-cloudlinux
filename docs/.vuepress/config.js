@@ -163,16 +163,7 @@ module.exports = {
             collapsable: false,
             children: [
               "/introduction/",
-              "/cloudlinux_installation/",
-              "/limits/",
-              "/lve_manager/",
-              "/cloudlinux-os-plus/",
-              "/cloudlinux_os_components/",
-              "/command-line_tools/",
-              "/control_panel_integration/",
-              "/cloudlinux_os_kernel/",
-              "/for_cloudlinux_partners/",
-              "/deprecated/"
+              "/wpos-plugin/"
             ]
           }
         ]
