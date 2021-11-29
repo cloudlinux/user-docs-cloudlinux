@@ -157,11 +157,18 @@ If you get something like "Unexpected WordPress error" you can do the following:
 
 ### Object Cache module Known Issues
 
-If you open the WordPress admin panel and find Redis Object cache plugin, open Settings for it, you can find the following:
+1. If you open the WordPress admin panel and find Redis Object cache plugin, open Settings for it, you can find the following:
 
 **Port: 6379**
 
 It is incorrect (will be fixed soon), it works via the **file socket**.
+
+2. If you get the following error:
+
+![](/images/WPOSError1.png)
+
+Try again later. The cause of the problem is a DDoS protection for the WP Optimization suite which allows restart daemon only once in a minute.
+
 
 ## FAQ
 
