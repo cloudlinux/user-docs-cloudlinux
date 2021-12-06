@@ -4,7 +4,7 @@ Also called WP Optimization Suite.
 
 ## Introduction
 
-Performance has a great impact on the site attendance and efficiency. We know that many customers want an auto tool to resolve problems with site performance. Many sites are built with WordPress CMS. So, we decided to find and implement some complex solution – the “WordPress Optimization Suite” to help our customers increase their site performance.
+Performance has a great impact on the site attendance and efficiency. We know that many customers want an auto tool to resolve problems with site performance. Many sites are built with WordPress CMS. So, we decided to find and implement a complex solution – the “WordPress Optimization Suite” to help our customers increase their site performance.
 
 We introduce the first functionality for the optimization suite called “Object cache module”.
 
