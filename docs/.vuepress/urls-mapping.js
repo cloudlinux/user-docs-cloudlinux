@@ -2542,5 +2542,6 @@ module.exports = {
   "/introduction/#what-is-cloudlinux": "/introduction/#what-is-cloudlinux-os-shared",
   "introduction/#cloudlinux-life-cycle": "/introduction/#cloudlinux-os-shared-life-cycle",
   "/introduction/#description-of-cloudlinux-components": "/introduction/#description-of-cloudlinux-os-shared-components",
-  "lve_manager/#cloudlinux-installation-wizard": "/lve_manager/#cloudlinux-os-shared-installation-wizard"
+  "lve_manager/#cloudlinux-installation-wizard": "/lve_manager/#cloudlinux-os-shared-installation-wizard",
+  "/wpos-plugin/#site-optimization-plugin": "/wpos-plugin/#site-optimization-module"
 };
