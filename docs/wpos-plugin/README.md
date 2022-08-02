@@ -144,7 +144,7 @@ It is important to use `ea-php`/`alt-php` version 7.4 and 8.0 for your website t
 
 * If you can open CloudLinux PHP Selector, you can find the actual PHP version in the `version` column.
 
-    ![](/images/PHPVersionChecked2.png)
+    ![](/images/PHPVersionChecked2.1.png)
 
 
 #### Changing PHP version for the website
@@ -159,7 +159,7 @@ It is important to use `ea-php`/`alt-php` version 7.4 and 8.0 for your website t
 
 Causes of the "No compatibility" message are always [Limitations](/wpos-plugin/#object-cache-module-limitations). Each message has a small "how to", so you can try to fix them by yourself via cPanel or WordPress Admin interface.
 
-![](/images/WPNoCompatibility.png)
+![](/images/WPNoCompatibility1.png)
 
 #### Misconfiguration message
 
@@ -169,7 +169,7 @@ The misconfiguration message can appear in the following cases:
 * WordPress Redis Object Cache plugin is disabled via WordPress Admin Gui/Plugins. **Resolution** You can resolved it by yourself via the WordPress Admin Gui.
 * Version of PHP is incompatible or does not have all needed modules installed.
 
-![](/images/WPMisconfiguration.png)
+![](/images/WPMisconfiguration1.png)
 
 #### Post check issues
 
@@ -194,7 +194,7 @@ It is incorrect (will be fixed soon), it works via the **file socket**.
 
 2. If you get the following error:
 
-![](/images/WPOSError1.png)
+![](/images/UnexpectedError1.png)
 
 Try again later. The cause of the problem is a DDoS protection for the WP Optimization suite which allows restart daemon only once in a minute.
 
