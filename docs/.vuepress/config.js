@@ -92,7 +92,7 @@ module.exports = {
   },
 
   themeConfig: {
-    repo: "cloudlinux/cloudlinux-doc",
+    repo: "cloudlinux/user-docs-cloudlinux",
     editLinks: true,
     docsBranch: "dev",
     docsDir: "docs",
