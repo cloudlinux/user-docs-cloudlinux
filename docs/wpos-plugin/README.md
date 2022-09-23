@@ -2,7 +2,7 @@
 
 ## Overview
 
-AccelerateWP is a complex solution to help our customers increase their WordPress site performance. With AccelerateWP you can manage optimization features, like object caching, css and js preprocessing and website preloading.
+AccelerateWP is a complex solution to help customers increase their WordPress site performance. With AccelerateWP you can manage optimization features, like object caching, CSS and JavaScript preprocessing and website preloading.
 
 In order to start using AccelerateWP, go to the cPanel interface and find the `AccelerateWP` application in the `Software` section.
 
@@ -42,13 +42,13 @@ Login into the WordPress Admin and find the AccelerateWP in the list of active p
 
 ![](/images/WPPlugins.png)
 
-Page caching will be enabled by default. Click "Settings" link below the plugin name to configure additional options.
+Page caching will be enabled by default. Click the "Settings" link below the plugin name to configure additional options.
 
 ![](/images/AWPPlugin.png)
 
 
 ### Limitations
-* Website must use php version 7.0 or higher.
+* Website must use PHP version 7.0 or higher.
 * WordPress version must be 5.4 and higher.
 * Other WordPress Caching plugins must not be installed.
 * WordPress should not run in Multisite mode.
@@ -64,7 +64,7 @@ Separate cache files for mobile devices. In this case the content for mobile dev
 
 This option is necessary if you have some functionality only for mobile devices, not for desktop\tablets.
 
-We prepared the diagram to help you understand if you need mobile caching.
+The following diagram helps you understand if you need mobile caching.
 
 ![](/images/MobileDiag.png)
 
@@ -94,7 +94,7 @@ Putting CSS and JS files into their respective groups, makes requests for downlo
 
 HTTP/2 introduced multiplexing. Now, the browser can send unlimited number of requests to the server, then download all files simultaneously with only one TCP connection.
 
-Consequently, HTTP/2 takes care of multiple TCP connections and the waiting times before each download. In one sense, consolidating CSS and JS files might be unnecessary.
+Consequently, HTTP/2 takes care of multiple TCP connections and the waiting time before each download. In one sense, consolidating CSS and JS files might be unnecessary.
 
 To verify which HTTP version is used for requests on your site, you can use https://tools.keycdn.com/http2-test
 
@@ -132,7 +132,7 @@ This option will be active only if you choose Minify javascript files. It is not
 
 **Load JavaScript deferred**
 
-One major cause of slow web pages is a so-called blocking script https://www.dummies.com/web-design-development/javascript/deferred-loading-with-javascript/
+One major cause of slow web pages is a so-called blocking script: [https://www.dummies.com/web-design-development/javascript/deferred-loading-with-javascript/](https://www.dummies.com/web-design-development/javascript/deferred-loading-with-javascript/).
 
 Loading JavaScript called a blocking script blocks the webpage from loading.
 
@@ -182,7 +182,7 @@ Provides functionality to preload the HTML content of the hovered link for accel
 
 **Prefetch DNS Requests**
 
-If your website uses external resources (e.g. Google fonts, Youtube video, etc) AccelerateWP can preload these resources for accelerating loading pages. To activate preloading external URLs, provide a list of external URLs.
+If your website uses external resources (e.g. Google fonts, YouTube video, etc.), AccelerateWP can preload these resources for accelerating loading pages. To activate preloading external URLs, provide a list of external URLs.
 
 **Preload Fonts**
 
@@ -291,7 +291,8 @@ For backing up the settings, there is a function for exporting settings. To use 
 
 Unlike full page caching, this mechanism is not saving the whole page in cache, but stores database query results in additional storage for quick access. This mechanism is really helpful in case your site needs to process multiple pages per second as requests come in and may be helpful in case when full page caching cannot be used, e.g. on personalized pages.
 
-When we recommend to use Object caching feature:
+The Object caching feature is recommended to use in the following:
+
 * Websites used for extremely active exchange of information (forums, blogs, etc..)
 * Websites with too many requests running at the same time
 * Websites having important pages that cannot be cached entirely and exclude from the "whole page caching" due to any reason
