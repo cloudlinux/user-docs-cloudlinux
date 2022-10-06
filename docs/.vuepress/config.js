@@ -166,7 +166,8 @@ module.exports = {
             collapsable: false,
             children: [
               "/introduction/",
-              "/wpos-plugin/"
+              "/wpos-plugin/",
+              "/smart-advice/"
             ]
           }
         ]
