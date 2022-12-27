@@ -255,10 +255,6 @@ When the server uses Varnish, you need to activate the add-on for implementing c
 If your site uses the WebP plugin you can activate AccelerateWP WebP Compatibility add-on to achieve browser compatibility with your WebP images.
 
 
-### CloudFlare
-If your site is connected to the Cloudflare CDN you can activate the Cloudflare add-on to manage Cloudflare options with AccelerateWP and automatic clearing cache when AccelerateWP clears site cache. After activating the add-on, you need to click the *Modify Options* button and specify the Cloudflare API key, Account E-mail and Zone ID.
-
-
 ### CDN
 CDN stands for Content Delivery Network, the feature that simplifies and speeds up resources loading for your customers.
 
