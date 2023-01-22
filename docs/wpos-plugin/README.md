@@ -334,6 +334,8 @@ window with link to the page where you can upgrade subscription.
 
 If you don't see any links, contact your hoster to upgrade your subscription manually.
 
+![](./images/AWPUpgradeNoLink.png)
+
 If subscription is active, you will bypass the subscription window and proceed
 directly to the plugin installation.
 
