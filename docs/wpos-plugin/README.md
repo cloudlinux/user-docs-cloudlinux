@@ -332,6 +332,13 @@ window with link to the page where you can upgrade subscription.
 
 ![](./images/AWPUpgradeLink.png)
 
+When upgrade link is clicked, you will see the billing interface opened in new browser window.
+Successful upgrade of your subscription will automatically close the billing window and start
+background upgrade process. Once your payment is processed, feature will be automatically installed
+on the website.
+
+![](./images/AWPUpgradeModuleWait.png)
+
 If you don't see any links, contact your hoster to upgrade your subscription manually.
 
 ![](./images/AWPUpgradeNoLink.png)
