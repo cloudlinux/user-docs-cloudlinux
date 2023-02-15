@@ -43,7 +43,7 @@ AccelerateWP is a base feature that provides full page caching, GZIP compression
 optimizations.
 
 In order to start working with AccelerateWP feature, check if advice is available in the corresponding 
-cell on the intersection of website and Accelerate WP column.
+cell on the intersection of website and AccelerateWP column.
 
 ![](./images/AWPUserUI.png)
 
@@ -439,7 +439,7 @@ AccelerateWP with maximum settings for sites loading longer than 1 second always
 This can be caused by several reasons. Either your website was detected to have malfunctions
 or there was an issue with environment when feature was installed (e.g. bad internet connectivity with wordpress market).
 
-First, try to enable feature manually using Accelerate WP interface. 
+First, try to enable feature manually using AccelerateWP interface. 
 Most likely you will find human-readable error message there.
 
 If the issue persists, or you cannot resolve it yourself, 
