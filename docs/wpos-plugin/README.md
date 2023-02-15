@@ -437,7 +437,7 @@ AccelerateWP with maximum settings for sites loading longer than 1 second always
 
 ### My subscription was upgraded, but feature was not installed automatically
 This can be caused by several reasons. Either your website was detected to have malfunctions
-or there was an issue with environment when feature was installed (e.g. bad internet connectivity with wordpress market).
+or there was an issue with environment when feature was installed (e.g. bad internet connectivity with WordPress market).
 
 First, try to enable feature manually using AccelerateWP interface. 
 Most likely you will find human-readable error message there.
