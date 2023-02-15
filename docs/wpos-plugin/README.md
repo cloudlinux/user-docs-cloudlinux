@@ -434,3 +434,13 @@ Because of this, the total score of the site by PageSpeed may be reduced. **To i
 
 AccelerateWP with maximum settings for fast sites gives a similar PageSpeed score for mobile and an improved result for desktop.
 AccelerateWP with maximum settings for sites loading longer than 1 second always gives a better score than mod_pagespeed.
+
+### My subscription was upgraded, but feature was not installed automatically
+This can be caused by several reasons. Either your website was detected to have malfunctions
+or there was an issue with environment when feature was installed (e.g. bad internet connectivity with wordpress market).
+
+First, try to enable feature manually using Accelerate WP interface. 
+Most likely you will find human-readable error message there.
+
+If the issue persists, or you cannot resolve it yourself, 
+contact your hoster and attach `~/.clwpos/main.log` for further investigation. 
