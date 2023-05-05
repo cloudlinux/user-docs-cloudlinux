@@ -188,6 +188,69 @@ Cases when image will not be affected by the *Add Missing Image Dimensions*:
 * Image from external domains
 
 
+### Image Optimization
+Optimize image delivery by minifying the existing images and serving next-gen image formats when possible.
+
+:::tip Note
+This feature can only be activated/deactivated in the AccelerateWP hosting panel interface or in the SmartAdvice WordPress plugin.
+:::
+
+![](./images/AWPImageOptimizationSettings.png)
+
+After activating the function, it will start searching for files in the `WP_CONTENT_DIR/uploads` folder in supported formats - jpg, jpeg, gif and png.
+
+Each found file (except those already optimized) will be queued for optimization using CloudLinux SaaS.
+
+In the WordPress admin interface, the number of images to optimize will be displayed at the top of the AccelerateWP settings screen.
+
+![](./images/AWPImageOptimizationProgress.png)
+
+After the file is successfully optimized, a notification will be sent to the special API of the site that the file is ready.
+
+The original file will be copied to the backup folder:  
+`WP_CONTENT_DIR/accelerate-wp/images/backup/uploads/{relative_path_of_the_file}`  
+Then it was replaced with an optimized one and added with an additional file in the webp format.
+
+The image optimization function automatically activates the ability of the plugin to replace the original images with the WebP format if they are present in the file system.
+
+When a new image is uploaded to your site using the WordPress functions/interface, it will be submitted for optimization with high priority.
+
+After optimization of all images is completed, you will see the notification in the admin panel.
+
+![](./images/AWPImageOptimizationSuccess.png)
+
+**Restore images from backup folder**
+
+`WP_CONTENT_DIR` - path to your site's wp-content folder
+
+Test before run (dry run):  
+```rsync -avnI WP_CONTENT_DIR/accelerate-wp/images/backup/uploads/ WP_CONTENT_DIR/uploads```
+
+Restore and override files from backup folder:  
+```rsync -avI WP_CONTENT_DIR/accelerate-wp/images/backup/uploads/ WP_CONTENT_DIR/uploads```
+
+**Troubleshooting**
+
+**Wrong file permissions** - Image optimization will not start and show an admin notice. You can try re-enabling the optimization feature again or create folders manually.
+
+![](./images/AWPImageOptimizationWrongFilePermissions.png)
+
+**Database table cannot be created** - Image optimization will not start and show an admin notice. You can try re-enabling the optimization feature or contact your system administrator.
+
+![](./images/AWPImageOptimizationDatabaseTableCannotBeCreated.png)
+
+**Monthly quota exceeded** - Your plan has reached the feature usage limit for current month. The plugin will show an admin notice and pause the image optimization until the start of the next month.
+
+![](./images/AWPImageOptimizationMonthlyQuotaExceeded.png)
+
+**Authentication failed** - The plugin will postpone the image optimization process and retry every 15 minutes. If the authentication is failing for more then 24 hours, the plugin will stop the process and show an admin notice. Contact your system administrator.
+
+![](./images/AWPImageOptimizationAuthenticationFailed.png)
+
+**SaaS service not available** - The plugin will show an admin notice, pause processing other jobs in the queue and retry every 5  minutes for the next hour and then every hour.
+
+![](./images/AWPImageOptimizationSaaSServiceNotAvailable.png)
+
 ### Preload
 **Preload Cache**
 
